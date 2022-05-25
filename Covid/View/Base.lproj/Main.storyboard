@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J7Z-h3-ahH">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="fsf-DT-hxU">
+            <objects>
+                <navigationController id="J7Z-h3-ahH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RJd-SE-xVl">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aAK-GL-D9P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZ3-Wg-l2V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-849" y="84"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Covid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yns-ce-9Sl">
+                                <rect key="frame" x="0.0" y="828" width="428" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBI-af-4Yi">
+                                        <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="newspaper" catalog="system" title="News"/>
+                                        <connections>
+                                            <action selector="news:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ykP-iP-BYC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKo-6c-LTw">
+                                        <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chart.xyaxis.line" catalog="system" title="Stats"/>
+                                        <connections>
+                                            <action selector="stats:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMB-7O-P7q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKx-Uc-Qr3">
+                                        <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="doc.text" catalog="system" title="Symptom"/>
+                                        <connections>
+                                            <action selector="symptoms:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b2T-zu-X9c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.67450980390000004" green="0.43500000239999997" blue="0.91799998279999995" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="86w-xM-4Rg"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="FTu-2m-ouf">
+                                <rect key="frame" x="0.0" y="282" width="428" height="362"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FTu-2m-ouf" secondAttribute="height" multiplier="207:175" id="Tvw-aR-h8F"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Threat is the virus, not the people" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3R-cO-qtG">
+                                <rect key="frame" x="61.666666666666657" y="650" width="304.66666666666674" height="21.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yns-ce-9Sl" secondAttribute="trailing" id="2TO-Uz-kRh"/>
+                            <constraint firstItem="FTu-2m-ouf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="84U-FH-wce"/>
+                            <constraint firstItem="FTu-2m-ouf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E1w-Kz-sXi"/>
+                            <constraint firstItem="Yns-ce-9Sl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G8Z-yX-jbf"/>
+                            <constraint firstItem="d3R-cO-qtG" firstAttribute="top" secondItem="FTu-2m-ouf" secondAttribute="bottom" constant="6" id="QIZ-aX-kme"/>
+                            <constraint firstItem="d3R-cO-qtG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dKg-AO-ONP"/>
+                            <constraint firstAttribute="bottom" secondItem="Yns-ce-9Sl" secondAttribute="bottom" constant="38" id="ggY-58-NZ4"/>
+                            <constraint firstItem="FTu-2m-ouf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pgu-17-WoF"/>
+                            <constraint firstItem="FTu-2m-ouf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vXC-rJ-x5V"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="z6m-Oc-kc6"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="RxQ-t1-qcB" kind="push" identifier="homeToSymptoms" id="RmB-Oi-5fG"/>
+                        <segue destination="wvt-2T-f1c" kind="push" identifier="homeToStats" id="4QH-O3-DgF"/>
+                        <segue destination="f46-CM-S9t" kind="push" identifier="homeToNews" id="uGV-mf-EBq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.859813084112147" y="83.585313174946009"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="DEu-7J-EMu">
+            <objects>
+                <viewController id="f46-CM-S9t" customClass="NewsViewController" customModule="Covid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ree-A8-k76">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9oZ-zW-LQ3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mKt-eV-uqb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6D-tR-J9W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="-356"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oNp-Tf-7xd">
+            <objects>
+                <viewController id="RxQ-t1-qcB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ksb-f0-oSF">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DU2-yY-PUL">
+                                <rect key="frame" x="16" y="88" width="396" height="796"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Most common symptoms:
+ • fever
+ • cough
+ • tiredness
+ • loss of taste or smell
+
+Less common symptoms:
+ • sore throat
+ • headache
+ • aches and pains
+ • diarrhoea
+ • a rash on skin
+ • discolouration of fingers or toes
+ • red or irritated eyes
+
+Serious symptoms:
+ • difficulty breathing 
+ • shortness of breath
+ • loss of speach or mobility 
+ • confusion
+ • chest pain
+
+
+Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EAM-bR-hhE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DU2-yY-PUL" firstAttribute="leading" secondItem="EAM-bR-hhE" secondAttribute="leading" constant="16" id="Dih-wj-AId"/>
+                            <constraint firstItem="EAM-bR-hhE" firstAttribute="trailing" secondItem="DU2-yY-PUL" secondAttribute="trailing" constant="16" id="ERu-JF-8sz"/>
+                            <constraint firstAttribute="bottom" secondItem="DU2-yY-PUL" secondAttribute="bottom" constant="42" id="F8e-G2-8py"/>
+                            <constraint firstItem="DU2-yY-PUL" firstAttribute="top" secondItem="EAM-bR-hhE" secondAttribute="top" id="cBB-Yg-U5J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9dg-dq-yMI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7q-D1-bEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1553.8461538461538" y="83.886255924170612"/>
+        </scene>
+        <!--StatsUI-->
+        <scene sceneID="r4X-0o-E4v">
+            <objects>
+                <viewController id="wvt-2T-f1c" customClass="StatsUI" customModule="Covid" propertyAccessControl="all" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2HO-xr-Imf">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="16o-cv-vmz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QjE-MU-4Wo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTs-ss-udH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="539"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="134" height="125.33333587646484"/>
+        <image name="chart.xyaxis.line" catalog="system" width="128" height="101"/>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="newspaper" catalog="system" width="128" height="111"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2022-05-08 at 00.43.51" translatesAutoresizingMaskIntoConstraints="NO" id="dco-yw-PQ1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXZ-cK-Z4D">
+                                <rect key="frame" x="166.5" y="280.5" width="81" height="33"/>
+                                <color key="backgroundColor" red="0.67450980390000004" green="0.43500000239999997" blue="0.91799998279999995" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Covid">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="29" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bringing you the latest news" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2M-bv-jSQ">
+                                <rect key="frame" x="99.5" y="323" width="215" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xXZ-cK-Z4D" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-151" id="AIM-fn-Z9E"/>
+                            <constraint firstAttribute="bottom" secondItem="dco-yw-PQ1" secondAttribute="bottom" id="CfO-8q-Z6b"/>
+                            <constraint firstItem="H2M-bv-jSQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-114.67" id="Lhw-Xj-R2s"/>
+                            <constraint firstItem="dco-yw-PQ1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MFQ-Ez-nrK"/>
+                            <constraint firstAttribute="bottom" secondItem="dco-yw-PQ1" secondAttribute="bottom" id="RZ1-sU-7LY"/>
+                            <constraint firstItem="dco-yw-PQ1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bvz-mq-Gun"/>
+                            <constraint firstItem="H2M-bv-jSQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eaG-ay-uvC"/>
+                            <constraint firstItem="dco-yw-PQ1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uPG-Ja-xwI"/>
+                            <constraint firstItem="xXZ-cK-Z4D" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vHU-TP-PnL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.200000000000003" y="373.15270935960592"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screenshot 2022-05-08 at 00.43.51" width="182.5" height="314"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
