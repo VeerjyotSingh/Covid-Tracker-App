@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Charts
-import SwiftUICharts
 
 
 class StatsUI : UIViewController {
