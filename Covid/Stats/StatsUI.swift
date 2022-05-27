@@ -42,6 +42,7 @@ class StatsUI : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             self.loadView()
             timePeriod.dataSource = self
             timePeriod.delegate = self
+            self.timePeriod.selectRow(0, inComponent: 0, animated: false)
             createBarChart()
             array = array2
         } else if time[row] == time[1]{
@@ -51,6 +52,7 @@ class StatsUI : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             self.loadView()
             timePeriod.dataSource = self
             timePeriod.delegate = self
+            self.timePeriod.selectRow(1, inComponent: 0, animated: false)
             createBarChart()
             array = array2
         }else if time[row] == time[2]{
@@ -61,6 +63,7 @@ class StatsUI : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             self.loadView()
             timePeriod.dataSource = self
             timePeriod.delegate = self
+            self.timePeriod.selectRow(2, inComponent: 0, animated: false)
             createBarChart()
             array = array2
         }else if time[row] == time[3]{
@@ -71,6 +74,7 @@ class StatsUI : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             self.loadView()
             timePeriod.dataSource = self
             timePeriod.delegate = self
+            self.timePeriod.selectRow(3, inComponent: 0, animated: false)
             createBarChart()
             array = array2
         }else if time[row] == time[4]{
@@ -81,6 +85,7 @@ class StatsUI : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             self.loadView()
             timePeriod.dataSource = self
             timePeriod.delegate = self
+            self.timePeriod.selectRow(4, inComponent: 0, animated: false)
             createBarChart()
             array = array2
         }
