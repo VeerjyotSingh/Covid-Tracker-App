@@ -9,14 +9,86 @@ import SwiftUI
 import Charts
 
 
-class StatsUI : UIViewController {
+class StatsUI : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    
+    var time = ["1 Year","6 Months", "3 Months", "1 Months", "2 weeks"]
     var array:[Int] = []
     var nothing:Bool = false
     let baseURL = "https://api.covid19api.com/dayone/country/india/status/confirmed"
     
+    
+    @IBOutlet weak var timePeriod: UIPickerView!
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return time.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return time[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let array2 = array
+        if time[row] == time[0]{
+            while array.count != 365 {
+            array.remove(at: 0)
+            }
+            
+            self.loadView()
+            timePeriod.dataSource = self
+            timePeriod.delegate = self
+            createBarChart()
+            array = array2
+        } else if time[row] == time[1]{
+            while array.count != 180 {
+            array.remove(at: 0)
+            }
+            self.loadView()
+            timePeriod.dataSource = self
+            timePeriod.delegate = self
+            createBarChart()
+            array = array2
+        }else if time[row] == time[2]{
+            while array.count != 90 {
+            array.remove(at: 0)
+            }
+            
+            self.loadView()
+            timePeriod.dataSource = self
+            timePeriod.delegate = self
+            createBarChart()
+            array = array2
+        }else if time[row] == time[3]{
+            while array.count != 30{
+            array.remove(at: 0)
+            }
+            
+            self.loadView()
+            timePeriod.dataSource = self
+            timePeriod.delegate = self
+            createBarChart()
+            array = array2
+        }else if time[row] == time[4]{
+            while array.count != 14 {
+            array.remove(at: 0)
+            }
+            
+            self.loadView()
+            timePeriod.dataSource = self
+            timePeriod.delegate = self
+            createBarChart()
+            array = array2
+        }
+    }
     override func viewDidLoad() {
         super .viewDidLoad()
+        timePeriod.dataSource = self
+        timePeriod.delegate = self
         fetch()
         while nothing == false {
             print("waiting")
@@ -93,7 +165,7 @@ class StatsUI : UIViewController {
                                   label: "Covid Cases in India")
         set.drawValuesEnabled = false
         set.drawIconsEnabled = false 
-        set.colors = ChartColorTemplates.material()
+        set.colors = ChartColorTemplates.joyful()
         let data = BarChartData(dataSet: set)
         barChart.data = data
         view.addSubview(barChart)

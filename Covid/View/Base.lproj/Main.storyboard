@@ -121,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="814" y="-356"/>
         </scene>
-        <!--View Controller-->
+        <!--Symptoms-->
         <scene sceneID="oNp-Tf-7xd">
             <objects>
                 <viewController id="RxQ-t1-qcB" sceneMemberID="viewController">
@@ -170,27 +170,43 @@ Seek immediate medical attention if you have serious symptoms. Always call befor
                             <constraint firstItem="DU2-yY-PUL" firstAttribute="top" secondItem="EAM-bR-hhE" secondAttribute="top" id="cBB-Yg-U5J"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9dg-dq-yMI"/>
+                    <navigationItem key="navigationItem" title="Symptoms" id="9dg-dq-yMI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j7q-D1-bEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1553.8461538461538" y="83.886255924170612"/>
         </scene>
-        <!--StatsUI-->
+        <!--Statistic Graph-->
         <scene sceneID="r4X-0o-E4v">
             <objects>
-                <viewController id="wvt-2T-f1c" customClass="StatsUI" customModule="Covid" propertyAccessControl="all" sceneMemberID="viewController">
+                <viewController id="wvt-2T-f1c" customClass="StatsUI" customModule="Covid" propertyAccessControl="none" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2HO-xr-Imf">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2r-fT-Zgw">
+                                <rect key="frame" x="0.0" y="720" width="428" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="Nvr-vO-qmF"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="16o-cv-vmz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h2r-fT-Zgw" firstAttribute="trailing" secondItem="16o-cv-vmz" secondAttribute="trailing" id="RDL-5i-djL"/>
+                            <constraint firstItem="h2r-fT-Zgw" firstAttribute="leading" secondItem="16o-cv-vmz" secondAttribute="leading" id="Wlw-o8-NF4"/>
+                            <constraint firstItem="h2r-fT-Zgw" firstAttribute="bottom" secondItem="16o-cv-vmz" secondAttribute="bottom" id="cwo-k2-ze3"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QjE-MU-4Wo"/>
+                    <navigationItem key="navigationItem" title="Statistic Graph" id="QjE-MU-4Wo"/>
+                    <connections>
+                        <outlet property="timePeriod" destination="h2r-fT-Zgw" id="Zy6-Zk-9Q7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTs-ss-udH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="539"/>
+            <point key="canvasLocation" x="813.08411214953264" y="538.44492440604756"/>
         </scene>
     </scenes>
     <resources>

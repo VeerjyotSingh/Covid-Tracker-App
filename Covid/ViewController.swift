@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
     @IBAction func news(_ sender: UIButton) {
         performSegue(withIdentifier: "homeToNews", sender: self)
