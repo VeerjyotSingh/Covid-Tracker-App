@@ -9,3 +9,7 @@ A simple covid tracker app with health news and live covid cases graph
 
 
 ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-05-30 at 20 04 49](https://user-images.githubusercontent.com/103166939/171018062-5155633e-bd16-4417-8f11-adae9bebd41c.png)
+
+![Simulator Screen Shot - iPhone 13 Pro Max - 2022-05-30 at 20 05 06](https://user-images.githubusercontent.com/103166939/171018240-61a95608-4917-4e85-82d7-6854e1ffc09f.png)
+
+![Simulator Screen Shot - iPhone 13 Pro Max - 2022-05-30 at 20 04 56](https://user-images.githubusercontent.com/103166939/171018251-202e7577-f4c0-4a42-ad79-088c820b6792.png)
