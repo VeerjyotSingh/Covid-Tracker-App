@@ -33,10 +33,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yns-ce-9Sl">
-                                <rect key="frame" x="0.0" y="828" width="316" height="60"/>
+                                <rect key="frame" x="0.0" y="828" width="428" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBI-af-4Yi">
-                                        <rect key="frame" x="0.0" y="0.0" width="105.33333333333333" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="newspaper" catalog="system" title="News"/>
                                         <connections>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKo-6c-LTw">
-                                        <rect key="frame" x="105.33333333333334" y="0.0" width="105.33333333333334" height="60"/>
+                                        <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="chart.xyaxis.line" catalog="system" title="Stats"/>
                                         <connections>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKx-Uc-Qr3">
-                                        <rect key="frame" x="210.66666666666666" y="0.0" width="105.33333333333334" height="60"/>
+                                        <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="doc.text" catalog="system" title="Symptom"/>
                                         <connections>
@@ -86,6 +86,7 @@
                             <constraint firstItem="d3R-cO-qtG" firstAttribute="top" secondItem="FTu-2m-ouf" secondAttribute="bottom" constant="6" id="QIZ-aX-kme"/>
                             <constraint firstItem="d3R-cO-qtG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dKg-AO-ONP"/>
                             <constraint firstAttribute="bottom" secondItem="Yns-ce-9Sl" secondAttribute="bottom" constant="38" id="ggY-58-NZ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yns-ce-9Sl" secondAttribute="trailing" id="lab-69-vxp"/>
                             <constraint firstItem="FTu-2m-ouf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pgu-17-WoF"/>
                             <constraint firstItem="FTu-2m-ouf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vXC-rJ-x5V"/>
                         </constraints>
